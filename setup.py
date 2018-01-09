@@ -1,16 +1,15 @@
 from duckduckgo import __version__
 from setuptools import setup
 
-long_description = open('README.rst').read()
+long_description = open('README.MD').read()
 
 setup(name='duckduckgo',
       version=__version__,
       py_modules=['duckduckgo'],
-      description='Library for querying the DuckDuckGo API',
-      author='Michael Smith',
-      author_email='crazedpsyc@duckduckgo.com',
+      description='Python 3 library for querying the DuckDuckGo API',
+      author='Sasha Chernykh',
       license='BSD',
-      url='http://github.com/crazedpsyc/python-duckduckgo/',
+      url='https://github.com/Kristinita/python-duckduckgo',
       long_description=long_description,
       platforms=['any'],
       classifiers=["Development Status :: 4 - Beta",
