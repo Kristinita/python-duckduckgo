@@ -1,9 +1,9 @@
-from setuptools import setup
 from duckduckgo import __version__
+from setuptools import setup
 
 long_description = open('README.rst').read()
 
-setup(name='duckduckgo2',
+setup(name='duckduckgo',
       version=__version__,
       py_modules=['duckduckgo'],
       description='Library for querying the DuckDuckGo API',
@@ -20,5 +20,6 @@ setup(name='duckduckgo2',
                    "Programming Language :: Python",
                    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
                    ],
-      entry_points={'console_scripts':['ddg = duckduckgo:main']},
+      entry_points={'console_scripts': ['ddg = duckduckgo:main']},
+      zip_safe=False,
       )
